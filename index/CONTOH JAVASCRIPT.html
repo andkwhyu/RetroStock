@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["nama"].value;
+  if (x == "") {
+    alert("Nama harus diisi");
+    return false;
+  }
+  else{
+    alert("Terimakasih");
+    
+  }
+}
+</script>
+</head>
+<body>
+<form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+		<table border="0.5">
+			<tr>
+				<td width="80px">Nama</td>
+				<td><input type="text" name="nama" size="60"></td>
+			</tr>
+			<tr>
+				<td>Alamat</td>
+				<td><input type="password" name="alamat" size="60"></td>
+			</tr>
+			</tr>
+				<td></td>
+				<td ><input type="submit" name="Kirim" value="Kirim"</td>
+			</tr>
+	
+		</table>
+</form>
+
+</body>
+</html>

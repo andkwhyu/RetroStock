@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Register form</title>
+	<link rel="stylesheet" href="../CSS/register.css">   
+</head>
+<body>
+	<div class="back">
+		<a href="LOGIN FORM.html"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></a>
+	</div>
+	<div class="signup-box">
+		<h1>Sign up</h1>
+		<div class="textbox"><form>
+			<i class="fa fa-user" aria-hidden="true"></i>
+			<input type="text" placeholder="Username" name="usr"required="">
+		</div>
+		<div class="textbox">
+			<i class="fa fa-envelope" aria-hidden="true"></i>
+			<input type="text" name="email" placeholder="Email" required="">
+		</div><div class="textbox">
+			<i class="fa fa-lock" aria-hidden="true"></i>
+			<input type="Password" placeholder="Password" name="psw"required="">
+		</div><div class="textbox">
+			<i class="fa fa-lock" aria-hidden="true"></i>
+			<input type="Password" placeholder="Re-Password" name="repsw"required="">
+		</div>
+<script type="text/javascript">
+		function cekNama(form) {
+			if (form.usr.value == "") {
+				alert("Please input username!");
+				return(false);
+		}		
+			if (form.email.value == "") {
+				alert("please input email!");
+				return(false);
+		}			
+			if (form.psw.value == "") {
+				alert("please input password!");
+				return(false);
+		}
+			if (form.repsw.value == "") {
+				alert("please re-type password!");
+				return(false);
+		}
+			alert("Success!");
+			return(true);
+		}
+		
+		
+	</script>   
+	
+<script type="text/javascript">
+function pindah(url)
+{
+window.location = url;
+}
+</script>
+<input type="submit"  class="submit"  value="Sign up" onclick="cekNama(this.form)">
+<input type="submit"  class="submit" value="Sign in" onclick="pindah('file:///D:/Materi%20Kuliah/SEMESTER%202/PRAKTIKUM%20WEB/FINAL%20PROJECT/LOGIN%20FORM.html')" >
+	</div>
+</body>
+</html>

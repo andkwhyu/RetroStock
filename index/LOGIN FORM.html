@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="../CSS/login.css" />
+  </head>
+  <body>
+    <div class="back">
+      <a href="HALAMANUTAMA.html"
+        ><i class="fa fa-chevron-circle-left" aria-hidden="true"></i
+      ></a>
+    </div>
+    <div class="login-box">
+      <h1>Sign in</h1>
+      <form name="myForm" action="#" onsubmit="return loginForm()">
+        <div class="textbox">
+          <i class="fa fa-user" aria-hidden="true"></i>
+          <input type="text" name="nama" placeholder="Username" />
+        </div>
+        <div class="textbox">
+          <i class="fa fa-lock" aria-hidden="true"></i>
+          <input type="password" name="katasandi" placeholder="Password" />
+        </div>
+        <label class="checkbox">
+          <input type="checkbox" checked="checked" name="remember" /> Remember
+          me
+        </label>
+
+        <script>
+          function loginForm() {
+            var x = document.forms["myForm"]["nama"].value;
+            if (x == "") {
+              alert("Username or password incorrect!");
+              return false;
+            } else {
+              alert("success!");
+            }
+          }
+        </script>
+        <script type="text/javascript">
+          function pindah(url) {
+            window.location = url;
+          }
+        </script>
+        <script type="text/javascript">
+          function pindahh(url) {
+            window.location = url;
+          }
+        </script>
+        <input
+          type="submit"
+          class="submit"
+          value="Sign in"
+          onclick="pindah('HALAMANUTAMA2.html')"
+          value="Sign in"
+        />
+      </form>
+      <input
+        type="submit"
+        class="submit"
+        value="Sign up"
+        onclick="pindahh('SIGNUPFORM.html')"
+        value="Sign up"
+      />
+    </div>
+  </body>
+</html>
